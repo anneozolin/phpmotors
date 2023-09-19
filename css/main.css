@@ -1,0 +1,493 @@
+/*
+font-family: 'Orbitron', sans-serif;
+font-family: 'Open Sans', sans-serif;
+
+color1: #bababa
+color2: #8d8d8d
+color3: #a6cbeb
+color4: #4c96d7
+color5: #3a3a3a
+color6: #ffffff
+*/
+
+/* Page */
+html{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+   }
+   
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    background-image: none;
+}
+
+
+body h1, h2 {
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+.page {
+    max-width: 100%;
+    background-color: #ffffff;
+}
+
+/* Header and Nav */
+
+header {
+    padding: 20px;
+    justify-content: center;
+}
+
+header img {
+    display: block;
+    float: left;
+}
+
+header p {
+    float: right;
+}
+
+header a {
+    text-decoration: none;
+    color: #4c96d7;
+}
+
+.name-label {
+    font-size: 0.8em;
+    color: #4c96d7;
+    clear: both;
+    float: right;
+    margin: 1rem 0;
+    font-weight: bold;
+}
+
+nav {
+    clear: both;
+    display: block;
+    font-size: 0.5em;
+    background-color: #3a3a3a;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin: 0 auto;
+    font-size: 0.5em;
+}
+
+nav ul {
+    display: flex;
+    background-color: #3a3a3a;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    flex-basis: auto;
+    width: 100%;
+}
+
+nav li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 0.3rem;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #4c96d7;
+    color: #3a3a3a;
+}
+
+/* Main */
+
+main {
+    padding: 20px;
+}
+
+main img {
+    max-width: 100%;
+}
+
+.delorean-hero {
+    text-align: center;
+}
+
+.delorean-hero img{
+    width: 100%;
+}
+
+.delorean-highlights {
+    position: absolute;
+    color: #4c96d7;
+    text-align: left;
+    top: 310px;
+    left: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: rgba(255, 255, 255, 0.8);;
+}
+
+.delorean-highlights h2{
+    font-size: 1.5rem;
+    margin: 0.5rem;
+}
+
+.delorean-highlights p {
+    margin: 0.5rem;
+}
+
+.button {
+    display: block;
+    padding: 0.5rem;
+    color: #ffffff;
+    background-color: #4c96d7;
+    text-decoration: none;
+    border: #3a3a3a solid 1px;
+    max-width: 50%;
+    margin: auto;
+}
+
+
+.upgrades {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    width: 95%;
+}
+
+.upgrade-item {
+    padding: 1rem;
+    text-align: center;
+    color: #ffffff;
+    background-color: #4c96d7;
+    border: #3a3a3a solid 2px;
+}
+
+.upgrade-item a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.upgrade-item img {
+    display: block;
+    margin: 1rem auto;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    font-size: 0.5em;
+    border-top: solid 5px #3a3a3a;
+    padding-bottom: 20px;
+    clear: both;
+}
+
+.management-main td {
+    padding: 1rem;
+}
+
+.management-main a {
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+
+/* Forms */
+
+form fieldset{
+    padding: 2rem 1rem;
+    margin: 1rem 1rem 3rem 1rem;
+}
+
+form .label-top{
+    display: block;
+    padding-top: 1.5rem;
+    margin: 1rem;
+}
+
+form input,textarea {
+    display: block;
+    font-size: 1rem;
+    border: 1px solid #3a3a3a;
+    border-radius: 5px;
+    padding: 0.75rem;
+    color: #3a3a3a;
+    width: 90%;
+    max-width: 30rem;
+    margin: 0.35rem 0;
+}
+
+form .pass-label {
+    color: #3a3a3a;
+    font-size: 0.7em;
+    font-style: italic;
+}
+
+.submit-button {
+    padding: 10px;
+    font-size: 1.2rem;
+    color: #ffffff;
+    background-color: #4c96d7;
+    text-decoration: none;
+    border: #3a3a3a solid 1px;
+    margin-top: 2rem;
+    max-width: 80%;
+}
+
+.not-member {
+    color: #4c96d7;
+    margin: auto;
+    text-align: center;
+}
+
+.not-member a {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #4c96d7;
+}
+
+.notice {
+    background-color: #4c96d7;
+    color: #ffffff;
+    padding: 1rem;
+}
+
+#inv-display{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#inv-display h2 {
+    font-size: 1.2rem;
+}
+
+
+#inv-display li{
+    margin-bottom: .5em;
+    border: 4px #ccc solid;
+    list-style-type: none;
+    flex: 1 1 auto;
+}
+
+#inv-display li img {
+    max-width: 100%;
+}
+
+.car-details .car-details-info {
+    padding: 1rem;
+    border: #3a3a3a 4px solid;
+}
+
+.car-details .car-details-info h2 {
+    font-size: 1.5rem;
+}
+
+.car-details img {
+    max-width: 90%;
+}
+
+.checkbox .options {
+    display: flex;
+}
+
+.checkbox label {
+    margin: 1rem;
+}
+
+.checkbox input {
+    width: auto;
+    margin: 0 0 0 0;
+    padding: 1rem;
+}
+
+.reviews p {
+    border: black solid 2px;
+    margin: 1.8rem;
+    padding: 1rem;
+}
+
+
+
+
+@media only screen and (min-width: 37em) {
+
+    body {
+        background-image: url("/phpmotors/images/site/small_check.jpg");
+    }
+
+    .page {
+        width: 95%;
+        border: #4c96d7 solid 5px;
+        border-radius: 5px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+
+    nav {
+        font-size: 0.5em;
+    }
+
+
+    .delorean-highlights {
+        top: 360px;
+        left: 50px;
+        font-size: 1.2rem;
+    }
+
+
+    .button {
+        position: absolute;
+        top: 490px;
+        left: 50px;
+        width: 150px;
+    }
+    
+
+    .delorian-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer {
+        font-size: 0.6em;
+    }
+
+    .submit-button {
+        max-width: 40%;
+    }
+
+    /* For vehicle display in classification view */
+	#inv-display {
+		flex-flow: row wrap;
+		justify-content: flex-start;
+	}
+
+	#inv-display h2{
+		font-size: 1rem;
+        margin: 0;
+	}
+
+	#inv-display li {
+		max-width: 200px;
+		flex: 1 0 auto;
+		text-align: center;
+		height: 300px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+        margin: .5rem;
+        padding: .2rem;
+	}
+      
+	#inv-display div {
+		width: 100%;
+	}
+
+    #inv-display a {
+		color: black;
+        text-decoration: none;
+	}
+
+    .vehicle-view {
+        display: grid;
+        grid-template-columns: 15% 1fr;
+        grid-template-rows: auto;
+    }
+
+    .vehicle-view h1{
+        grid-row: 1;
+        grid-column: 1 / 3;
+    }
+
+    #thumbnail-list {
+        width: 90%;
+        z-index: 1;
+    }
+    
+
+    #thumbnail-list img:hover {
+        max-width: none;
+        width: 200%;
+        border: #ccc 4px solid;
+
+    }
+
+    .car-details {
+        grid-column: 2 / 3;
+        grid-row: 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        z-index: 0;
+    }
+
+    .car-details img {
+        grid-column: 1;
+        grid-row: 1 / 3;
+        z-index: 0;
+    }
+
+    .car-details h2 {
+        font-size: 1.5rem;
+        grid-column: 2 / 3;
+        grid-row: 1;
+    }
+
+    .car-details .car-details-info {
+        grid-column: 2;
+        grid-row: 2 / 3;
+    }
+
+    .vehicle-reviews {
+        grid-column: 1 / 3;
+    }
+
+
+}
+
+
+
+@media only screen and (min-width: 64rem) {
+    .page {
+        width: 80%;
+    }
+
+    nav {
+        font-size: 1rem;
+    }
+
+    .delorean-highlights {
+        top: 350px;
+        left: 190px;
+        font-size: 1.5rem;
+    }
+
+
+    .button {
+        position: absolute;
+        top: 500px;
+        left: 190px;
+        width: 150px;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+
+    .submit-button {
+        font-size: 2rem;
+    }
+
+}
